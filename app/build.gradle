@@ -7,6 +7,18 @@ android {
     namespace 'com.example.game21'
     compileSdk 33
 
+    flavorDimensions "app"
+    productFlavors {
+        pago {
+            dimension "app"
+        }
+        gratuito {
+            dimension "app"
+            applicationIdSuffix ".gratuito"
+            versionNameSuffix "-gratuito"
+        }
+    }
+
     defaultConfig {
         applicationId "com.example.game21"
         minSdk 23
